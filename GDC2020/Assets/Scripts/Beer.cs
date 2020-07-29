@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class Beer : MonoBehaviour
 
-
+   
 {
     public float rotationSpeed = 10;
 
     public float forwardSpeed = -20;
     public float upSpeed = 4;
     public Rigidbody Rigidbody;
-
+    public Vector3 Direction;
+    public Transform Player;
+    public Transform Bus;
     // Start is called before the first frame update
     void Start()
     {
-       Rigidbody.velocity = transform.forward * forwardSpeed + transform.up * upSpeed;
-        Destroy(gameObject,5);
-
+        Player = GameObject.Find("Player").transform;
+        Bus = GameObject.Find("Bus").transform;
+        Direction = new Vector3(0, Bus.position.y - Player.position.y, Bus.position.z - Player.position.z);
+        Rigidbody.velocity = Direction.normalized * forwardSpeed + transform.up * upSpeed + new Vector3(Random.Range(-15f, 15f), 0, 0) ;
+        Destroy(gameObject,5); 
+       
     }
 
     // Update is called once per frame
