@@ -299,7 +299,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6705ee3c7ddfa4c45ba151c72a8f2d99, type: 2}
+  - {fileID: 2100000, guid: c5fc5a6708ed22243af7e261c07c06f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -672,3 +672,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beerPrefab: {fileID: 9148994692121544319, guid: 643802049ded8b44fa248b4f86112018,
     type: 3}
+  moveSpeed: 3
+  ThrowTime: 3
