@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public Rigidbody myRigidbody;
 
     public float moveSpeed = 3;
+    public float moveForward = 50;
 
     // Start is called before the first frame update
     void Start()
@@ -25,29 +26,29 @@ public class Player : MonoBehaviour
         
 
     public void Move()
-    { 
+    {
         if (Input.GetKey(KeyCode.A))
         {
-            myRigidbody.velocity = new Vector3(-moveSpeed, myRigidbody.velocity.y, 0);
+            myRigidbody.velocity = new Vector3(-moveSpeed, 0, 0);
         }
-       
+
         else if (Input.GetKey(KeyCode.D))
         {
-            myRigidbody.velocity = new Vector3(moveSpeed, myRigidbody.velocity.y, 0);
+            myRigidbody.velocity = new Vector3(moveSpeed, 0, 0);
         }
-                
+        else
+        {
+            myRigidbody.velocity = new Vector3(0, 0, myRigidbody.velocity.z);
+        }
     }
-        
-    void OnCollionEnter (Collision collisionInfo)
+    void OnTriggerEnter(Collider col)
     {
-       if (collisionInfo.collider.name == "Beer")
+        if (col.CompareTag("Beer"))
+        {
+            Destroy(col.gameObject);
+            myRigidbody.velocity = new Vector3(0, 0, moveForward);
+        }
     }
-       
-    
-    
-     
-
-         
 
 
 }
