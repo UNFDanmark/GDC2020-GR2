@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public Rigidbody myRigidbody;
 
     public float moveSpeed = 3;
-    public float moveForward = 50;
+    public float moveForward = 3;
 
     // Start is called before the first frame update
     void Start()

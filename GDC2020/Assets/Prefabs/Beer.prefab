@@ -125,10 +125,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4959e3f8da97a4042a95ed4bcde99109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 5
-  forwardSpeed: -30
-  upSpeed: 2
+  rotationSpeed: 3
+  forwardSpeed: -15
+  upSpeed: 0
+  range: 5
   Rigidbody: {fileID: 9148994692121544313}
+  Direction: {x: 0, y: 0, z: 0}
+  Player: {fileID: 0}
+  Bus: {fileID: 0}
 --- !u!1001 &3459947559385981424
 PrefabInstance:
   m_ObjectHideFlags: 0
