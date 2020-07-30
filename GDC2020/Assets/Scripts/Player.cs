@@ -29,12 +29,12 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            myRigidbody.velocity = new Vector3(-moveSpeed, 0, 0);
+            myRigidbody.velocity = new Vector3(-moveSpeed, 0, myRigidbody.velocity.z);
         }
 
         else if (Input.GetKey(KeyCode.D))
         {
-            myRigidbody.velocity = new Vector3(moveSpeed, 0, 0);
+            myRigidbody.velocity = new Vector3(moveSpeed, 0, myRigidbody.velocity.z);
         }
         else
         {
