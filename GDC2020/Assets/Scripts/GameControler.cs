@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameControler : MonoBehaviour
 {
     public GameObject CarObstaclePrefab;
+    public GameObject HardCarPrefab;
     public Transform[] Spawnpoint;
     public float moveSpeed = 3;
     public float SpawnTime = 3;
@@ -22,7 +23,17 @@ public class GameControler : MonoBehaviour
         if (SpawnTime <= 0)
 
         {
-            Spawn();
+            int Car = Random.Range(0, 2);
+            if (Car == 0)
+            {
+                Spawn1();
+            }
+            else if (Car == 1)
+            {
+                Spawn2();
+            }
+
+
             SpawnTime = 3;
         }
 
@@ -31,7 +42,7 @@ public class GameControler : MonoBehaviour
 
         // If statement for when the obstacle should appear
     }
-    public void Spawn()
+    public void Spawn1()
     {
         GameObject newCarObstacle = Instantiate(CarObstaclePrefab);
         int Position = Random.Range(0, 2);
@@ -45,16 +56,28 @@ public class GameControler : MonoBehaviour
             newCarObstacle.transform.position = Spawnpoint[1].position;
             newCarObstacle.transform.rotation = Spawnpoint[1].rotation;
         }
-       
+
+     
 
     }
-    
-
-    void OnTriggerEnter(Collider col)
+    public void Spawn2()
     {
-        if (col.CompareTag("Player"))
+        GameObject newCarObstacle = Instantiate(HardCarPrefab);
+        int Position = Random.Range(0, 2);
+        if (Position == 0)
         {
-            print("You Won!");
+            newCarObstacle.transform.position = Spawnpoint[0].position;
+            newCarObstacle.transform.rotation = Spawnpoint[0].rotation;
         }
+        else if (Position == 1)
+        {
+            newCarObstacle.transform.position = Spawnpoint[1].position;
+            newCarObstacle.transform.rotation = Spawnpoint[1].rotation;
+        }
+
+
+
     }
+
+
 }

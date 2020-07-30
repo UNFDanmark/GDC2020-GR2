@@ -5,17 +5,24 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     public Transform player;
-    public Vector3 offset;
+    public  Vector3 offset;
+    public float previousZ;
 
     // Start is called before the first frame update
     void Start()
     {
+        offset = transform.position;
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.position + offset;
+        if (previousZ - player.position.z > 0)
+        {
+            transform.position = new Vector3(offset.x, offset.y, player.position.z + offset.z);
+            print("hello");
+        }
+        previousZ = player.position.z;
     }
 }

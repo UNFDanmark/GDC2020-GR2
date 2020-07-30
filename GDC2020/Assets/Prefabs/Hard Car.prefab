@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 4758720379275953247}
   - component: {fileID: 2671097683389221022}
   - component: {fileID: 6293618617878859185}
-  - component: {fileID: 4055552513388468959}
+  - component: {fileID: -8029135952945268621}
   m_Layer: 0
-  m_Name: Car Obstacle 2
+  m_Name: Hard Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4055552513388468959
+--- !u!114 &-8029135952945268621
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,9 +120,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8883613656664000219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da2d657473be4ab40b3c4634641056c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 612600bb811ac2e49bbd807daca716e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Car: {fileID: 6293618617878859185}
   carSpeed: 40
-  destroytime: 6
+  destroytime: 3
+  CarZ: 0
+  forwardSpeed: -25
+  range: 9
+  Direction: {x: 0, y: 0, z: 0}
+  Player: {fileID: 0}

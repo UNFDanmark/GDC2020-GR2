@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 249673108}
   - component: {fileID: 249673110}
   - component: {fileID: 249673109}
+  - component: {fileID: 249673112}
   - component: {fileID: 249673111}
   m_Layer: 0
   m_Name: Win Wall
@@ -312,15 +313,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 249673107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd6ae67808a063e4cae156fdfaa78504, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fbc26643d3f1ed45b8aa957f8506915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CarObstaclePrefab: {fileID: 0}
-  Spawnpoint:
-  - {fileID: 338712863}
-  - {fileID: 1244645783}
-  moveSpeed: 3
-  SpawnTime: 3
+--- !u!54 &249673112
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249673107}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &270193171
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +490,7 @@ GameObject:
   - component: {fileID: 650799681}
   - component: {fileID: 650799680}
   - component: {fileID: 650799683}
+  - component: {fileID: 650799684}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -545,7 +557,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650799679}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 0, y: 5.35, z: -10.63}
+  m_LocalPosition: {x: 0, y: 7.38, z: -10.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -582,6 +594,21 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &650799684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650799679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf149946270eb8245a1941d1d895c06a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 172017464}
+  offset: {x: 0, y: 0, z: 0}
+  previousZ: 0
 --- !u!1 &773173395
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +640,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CarObstaclePrefab: {fileID: 8883613656664000219, guid: d15d4f4e420384547b7253205624a754,
+    type: 3}
+  HardCarPrefab: {fileID: 8883613656664000219, guid: 275242d51dbd81b4da7405020d4e4853,
     type: 3}
   Spawnpoint:
   - {fileID: 338712863}
