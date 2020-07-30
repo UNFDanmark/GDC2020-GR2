@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7d006f04a586a50489a4eb17e555cc3c, type: 2}
+  - {fileID: 2100000, guid: ce32d4d9c0951d24b8759ee674aebdaf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -123,5 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2d657473be4ab40b3c4634641056c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Car: {fileID: 5608594077198528394}
-  LeftRight: 0
+  Car: {fileID: 6293618617878859185}
+  carSpeed: 40
+  destroytime: 6
