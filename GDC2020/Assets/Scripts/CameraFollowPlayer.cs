@@ -21,7 +21,6 @@ public class CameraFollowPlayer : MonoBehaviour
         if (previousZ - player.position.z > 0)
         {
             transform.position = new Vector3(offset.x, offset.y, player.position.z + offset.z);
-            print("hello");
         }
         previousZ = player.position.z;
     }
