@@ -29,7 +29,7 @@ public class Beer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(rotationSpeed, rotationSpeed, rotationSpeed); 
+        transform.Rotate(0, rotationSpeed, rotationSpeed); 
     }
 
   
