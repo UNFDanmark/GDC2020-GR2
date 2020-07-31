@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
 
     public float moveSpeed = 3;
     public float moveForward = 3;
+    public AudioSource audioSource;
+    public AudioClip Drink;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +47,8 @@ public class Player : MonoBehaviour
     {
         if (col.CompareTag("Beer"))
         {
+
+            audioSource.PlayOneShot(Drink);
             Destroy(col.gameObject);
             myRigidbody.velocity = new Vector3(0, 0, moveForward);
         }
