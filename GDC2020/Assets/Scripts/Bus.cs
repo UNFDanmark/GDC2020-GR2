@@ -6,7 +6,7 @@ using UnityEngine;
 public class Bus : MonoBehaviour
 {
     public GameObject beerPrefab;
-
+    public GameObject beerCanPrefab;
     public float moveSpeed = 3;
     public float ThrowTime = 3;
 
@@ -24,7 +24,16 @@ public class Bus : MonoBehaviour
        if (ThrowTime <= 0)
 
         {
-            Shoot();
+            int Beerspawn = Random.Range(0, 2);
+            if (Beerspawn == 0)
+            {
+                ShootBeer();
+            }
+            else if (Beerspawn == 1)
+            {
+                ShootBeerCan();
+            }
+
             ThrowTime = 3;
         }
 
@@ -35,9 +44,17 @@ public class Bus : MonoBehaviour
    
     }
 
-    public void Shoot()
+    public void ShootBeer()
     {
         GameObject newBeer = Instantiate(beerPrefab);
+
+        newBeer.transform.position = transform.position;
+        newBeer.transform.rotation = transform.rotation;
+
+    }
+    public void ShootBeerCan()
+    {
+        GameObject newBeer = Instantiate(beerCanPrefab);
 
         newBeer.transform.position = transform.position;
         newBeer.transform.rotation = transform.rotation;
