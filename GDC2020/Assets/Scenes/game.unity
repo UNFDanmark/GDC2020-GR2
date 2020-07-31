@@ -377,7 +377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249673107}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.99825764, y: 5.538393, z: 17.54}
+  m_LocalPosition: {x: 0.99825764, y: 5.538393, z: 20.7}
   m_LocalScale: {x: 50, y: 10, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -565,7 +565,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338712862}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.233, y: -0.44, z: 41.4}
+  m_LocalPosition: {x: -0.196, y: -0.44, z: 41.4}
   m_LocalScale: {x: 0.02, y: 0.1, z: 1}
   m_Children:
   - {fileID: 1244645783}
@@ -1353,7 +1353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834616377}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.99825764, y: 5.538393, z: -21.2}
+  m_LocalPosition: {x: 0.99825764, y: 5.538393, z: -13.2}
   m_LocalScale: {x: 50, y: 10, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1594,7 +1594,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beerPrefab: {fileID: 9148994692121544319, guid: 643802049ded8b44fa248b4f86112018,
     type: 3}
-  beerCanPrefab: {fileID: 0}
+  beerCanPrefab: {fileID: 9148994692121544319, guid: ba001ed8aa579104d9a35257d26eca56,
+    type: 3}
   moveSpeed: 3
   ThrowTime: 3
 --- !u!82 &1920066549

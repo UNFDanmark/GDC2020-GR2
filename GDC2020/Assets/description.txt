@@ -1,0 +1,8 @@
+"Catch Up, Klogeåge" er spillet til alle klogeågerne som forventer at få 12 i deres sidste eksamen på gymnasiet. Dette spil er nemlig baseret på den traditionsrige studenterkørsel, og mere specifikt så at alle de elever der fik 12 i deres sidste eksamen skal løbe efter vognen.
+Spilleren er karakteren "klogeåge" som uheldigvis fik scoret topkarakteren, og derfor med livet som indsats må prøve at følge efter sine drillende kamerater, der fester på vognen. Dog er de venlige nok til at smide en øl ned mod ham i ny og næ. Og som alle ved, så er øl det bedste brændstof til en god løbetur.
+Derfor gælder det for spilleren om at gribe de øl som kammeraterne smider ud til dig, og på den måde få energi nok til at fange vognen.
+Men det er jo selfølgelig ikke så simpelt. Eftersom studentervognens chauffør har valgt at lægge sig på midten af vejen, skaber det store trafikmæssige problemer, og bilerne kører helt vildt omkring, og tager ikke hensyn til Klogeåge.
+
+Man bevæger sig mod venstre på "A"-knappen, og mod højre på "D"-knappen, og så skal man ellers prøve at gribe så mange øl som muligt, uden at blive kørt ned.
+
+Spillet er produceret af "Skål!", der består af Daniel, Samantha, Sarah, Xinru og Nikolaj.  

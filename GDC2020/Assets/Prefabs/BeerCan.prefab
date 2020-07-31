@@ -126,9 +126,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 3
-  forwardSpeed: -15
+  forwardSpeed: -20
   upSpeed: 0
-  range: 9
+  range: 11
   Rigidbody: {fileID: 9148994692121544313}
   Direction: {x: 0, y: 0, z: 0}
   Player: {fileID: 0}

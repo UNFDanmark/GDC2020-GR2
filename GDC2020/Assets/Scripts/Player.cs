@@ -52,6 +52,13 @@ public class Player : MonoBehaviour
             Destroy(col.gameObject);
             myRigidbody.velocity = new Vector3(0, 0, moveForward);
         }
+        if (col.CompareTag("Car"))
+        {
+
+            audioSource.PlayOneShot(Drink);
+            Destroy(col.gameObject);
+            myRigidbody.velocity = new Vector3(0, 0, moveForward);
+        }
     }
 
 
