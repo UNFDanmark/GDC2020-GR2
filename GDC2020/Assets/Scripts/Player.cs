@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     public float moveForward = 3;
     public AudioSource audioSource;
     public AudioClip Drink;
+    public AudioSource audioSourceCar;
+    public AudioClip Hitcar;
 
     // Start is called before the first frame update
     void Start()
@@ -52,12 +54,16 @@ public class Player : MonoBehaviour
             Destroy(col.gameObject);
             myRigidbody.velocity = new Vector3(0, 0, moveForward);
         }
-        if (col.CompareTag("Car"))
+        
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Car"))
         {
 
-            audioSource.PlayOneShot(Drink);
-            Destroy(col.gameObject);
-            myRigidbody.velocity = new Vector3(0, 0, moveForward);
+            audioSource.PlayOneShot(Hitcar);
+
         }
     }
 

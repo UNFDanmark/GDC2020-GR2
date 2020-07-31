@@ -218,7 +218,7 @@ Transform:
   - {fileID: 342211792}
   - {fileID: 1713945818}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &172017465
 MonoBehaviour:
@@ -237,6 +237,8 @@ MonoBehaviour:
   moveForward: 5
   audioSource: {fileID: 172017467}
   Drink: {fileID: 8300000, guid: 2d7deedffd6a3674fada4960776791c7, type: 3}
+  audioSourceCar: {fileID: 172017467}
+  Hitcar: {fileID: 8300000, guid: 6e4ee54c09533b14da2b160c6d39845f, type: 3}
 --- !u!54 &172017466
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -858,7 +860,7 @@ Transform:
   m_Children:
   - {fileID: 338712863}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &901501894
 GameObject:
@@ -952,7 +954,7 @@ Transform:
   m_LocalScale: {x: 350, y: 155, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &901501899
 MonoBehaviour:
@@ -1578,7 +1580,7 @@ Transform:
   m_Children:
   - {fileID: 1853588803}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1920066548
 MonoBehaviour:
@@ -1610,7 +1612,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4ab3d2f73b42b4c44a64f48179c473cd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.507
+  m_Volume: 0.383
   m_Pitch: 1
   Loop: 1
   Mute: 0
